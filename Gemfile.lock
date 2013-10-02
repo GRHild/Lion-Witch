@@ -37,7 +37,13 @@ GEM
     coffee-script-source (1.6.3)
     diff-lcs (1.2.4)
     erubis (2.7.0)
+<<<<<<< HEAD
     execjs (2.0.2)
+=======
+    execjs (2.0.1)
+    haml (4.0.3)
+      tilt
+>>>>>>> day-3-start
     hike (1.2.3)
     i18n (0.6.5)
     jbuilder (1.5.1)
@@ -54,6 +60,11 @@ GEM
     minitest (4.7.5)
     multi_json (1.8.0)
     polyglot (0.3.3)
+<<<<<<< HEAD
+=======
+    quiet_assets (1.0.2)
+      railties (>= 3.1, < 5.0)
+>>>>>>> day-3-start
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -84,7 +95,11 @@ GEM
       rspec-core (~> 2.14.0)
       rspec-expectations (~> 2.14.0)
       rspec-mocks (~> 2.14.0)
+<<<<<<< HEAD
     sass (3.2.11)
+=======
+    sass (3.2.10)
+>>>>>>> day-3-start
     sass-rails (4.0.0)
       railties (>= 4.0.0.beta, < 5.0)
       sass (>= 3.1.10)
@@ -121,8 +136,15 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 4.0.0)
+<<<<<<< HEAD
   jbuilder (~> 1.2)
   jquery-rails
+=======
+  haml
+  jbuilder (~> 1.2)
+  jquery-rails
+  quiet_assets
+>>>>>>> day-3-start
   rails (= 4.0.0)
   rspec-rails
   sass-rails (~> 4.0.0)

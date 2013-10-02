@@ -36,6 +36,13 @@ group :test do
   gem 'rspec-rails'
 end
 
+<<<<<<< HEAD
+=======
+gem 'haml'
+
+gem 'quiet_assets', :group => :development
+
+>>>>>>> day-3-start
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
