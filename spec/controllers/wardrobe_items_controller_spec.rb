@@ -29,4 +29,25 @@ describe WardrobeItemsController do
     expect(assigns(:wardrobe_item)).to be_a_new(WardrobeItem)
     end
   end
+
+  describe "POST create" do
+    it "creates a new WardrobeItem" do
+      expect {
+        post :create, { wardrobe_item: valid_attribtues }
+      }.to change(WardrobeItem, :count).by(1)
+    end
+
+    it "assigns a newly created WardrobeItem as @wardrobe_item" do
+      post :create, { wardrobe_item: valid_attribtues }
+
+      expect(assigns(:wardrobe_item)).to be_a(WardrobeItem)
+      expect(assigns(:wardrobe_item)).to be_persisted
+    end
+
+    it "redirects to the created WardrobeItem" do
+      post :create, {wardrobe_item: valid_attribtues }
+
+      expect(response).to redirect_to(WardrobeItem.last)
+    end
+  end
 end
