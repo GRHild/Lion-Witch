@@ -1,9 +1,5 @@
 class WardrobeItemsController < ApplicationController
-<<<<<<< HEAD
 
-  def index
-    @wardrobe_items = WardrobeItem.all
-=======
   def index
     @wardrobe_items = WardrobeItem.all
 
@@ -11,14 +7,13 @@ class WardrobeItemsController < ApplicationController
       format.html
       format.json { render json: @wardrobe_items }
     end
->>>>>>> day-3-start
+
   end
 
   def show
     @wardrobe_item = WardrobeItem.find(params[:id])
   end
-<<<<<<< HEAD
-=======
+
 
   def new
     @wardrobe_item = WardrobeItem.new
@@ -39,5 +34,4 @@ class WardrobeItemsController < ApplicationController
   def wardrobe_item_params
     params.require(:wardrobe_item).permit(:garment, :label, :season, :color)
   end
->>>>>>> day-3-start
 end
